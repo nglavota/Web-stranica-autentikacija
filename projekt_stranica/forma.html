@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava/registracija</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+<body>
+    <div class="divSve">
+        <h1>Prijava korisnika</h1>
+        <form id="loginForm">
+            <div class="divForma">
+                <label for="kimeLogin">Korisničko ime</label>
+                <input type="text" id="kimeLogin" name="korisnik" required>
+            </div>
+            <div class="divForma">
+                <label for="lozinkaLogin">Lozinka</label>
+                <input type="password" id="lozinkaLogin" name="lozinka" required>
+            </div>
+            <button type="submit" id="btnPrijava">Prijava</button>
+        </form>
+        <div id="outputLogin" class="output"></div>
+    </div>
+
+    <div class="divSve">
+        <h1>Registracija korisnika</h1>
+        <form id="registerForm">
+            <div class="divForma">
+                <label for="kimeReg">Korisničko ime</label>
+                <input type="text" id="kimeReg" name="korisnik" required>
+            </div>
+            <div class="divForma">
+                <label for="lozinkaReg">Lozinka</label>
+                <input type="password" id="lozinkaReg" name="lozinka" required>
+            </div>
+            <button type="submit" id="btnRegistracija">Registracija</button>
+        </form>
+        <div id="outputRegister" class="output"></div>
+    </div>
+</body>
+<script src="forma.js"></script>
+</html>

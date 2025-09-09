@@ -1,0 +1,89 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #b197a8, #f4c2c2, #d9b2d0, #f0d9f0);
+    background-size: 400% 400%;
+    animation: gradientAnim 15s ease infinite;
+}
+
+@keyframes gradientAnim 
+{
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.pocetnaSve 
+{
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 40px 60px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn 
+{
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 
+{
+    margin-bottom: 20px;
+    color: #743e68;
+    font-size: 2.2rem;
+    animation: fadeInText 2s ease;
+}
+
+@keyframes fadeInText 
+{
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+p 
+{
+    margin-bottom: 30px;
+    color: #555;
+    font-size: 1.1rem;
+    animation: fadeInText 2.5s ease;
+}
+
+.btn 
+{
+    background-color: #743e68;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+.btn:hover 
+{
+    background-color: #a55f88;
+    transform: scale(1.05);
+}
+
+@keyframes pulse 
+{
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}

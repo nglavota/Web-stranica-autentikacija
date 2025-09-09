@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stranica.css">
+    <title>Stranica</title>
+</head>
+<body>
+ <div class="container">
+    <div id="prvi" class="item1">
+        <h1 id="welcome"></h1>
+        <script>
+            const korisnik = localStorage.getItem("prijavljeniKorisnik");
+            document.getElementById("welcome").innerText = korisnik ? "Dobrodošli, " + korisnik + "!" : "Dobrodošli!";
+        </script>
+        <p>Istražite sadržaj stranice...</p>
+    </div>
+    <div id="drugi" class="item1">
+            <nav>
+                <ul>
+                    <li class="nav"><a href="#prvi">Zaglavlje</a></li>
+                    <li class="nav"><a href="#drugi">Navigacija</a></li>
+                    <li class="nav"><a href="#treci">Osobni podaci</a></li>
+                    <li class="nav"><a href="#cetvrti">Kratki životopis</a></li>
+                    <li class="nav"><a href="#peti">Galerija slika</a></li>
+                    <li class="nav"><a href="#sesti">Podnožje</a></li>
+                </ul>
+            </nav>
+    </div>
+    <div id="treci" class="item1">
+        <h2>Osobni podaci</h2>
+        <div><img src="slika/osoba.png" id="slika1"></div>
+        <div class="vazno"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ornare aliquam leo vel 
+         commodo. Cras sed tempus velit. Suspendisse vel tincidunt risus. Nunc imperdiet porttitor dignissim. Lorem ipsum
+         dolor sit amet, consectetur adipiscing elit. Proin sed iaculis diam. Donec vel scelerisque diam, vel rhoncus 
+         lacus. Aenean dapibus in leo non volutpat. Integer quis volutpat risus, vitae tincidunt felis.</p></div>
+    </div>
+
+    <div id="cetvrti" class="item1">
+        <h2>Kratki životopis</h2>
+
+        <div class="odl">
+        <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen 
+        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+        </p>  
+        </div>
+
+        <div class="odl">
+        <p>
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its 
+        layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to 
+        using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text.
+        </p>
+        </div>
+
+        <div class="odl">
+        <p>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, 
+        by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of 
+        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum 
+        generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the 
+        Internet.  
+        </p>
+        </div>
+
+        <div class="odl">
+        <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+        from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,
+        looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of
+        the word in classical literature, discovered the undoubtable source. 
+        </p>
+        </div>
+
+    </div>
+
+    <div id="peti" class="item1">
+        <h2>Galerija slika</h2>
+        <div class="item">
+            <img src="slika/slika1.jpg">
+            <img src="slika/slika2.jpg">
+        </div>
+        <div class="item">
+            <img src="slika/slika3.jpg">
+            <img src="slika/slika4.jpg">
+        </div>
+        <div class="item">
+            <img src="slika/slika5.jpg">
+            <img src="slika/slika6.jpg">
+        </div>
+        <div class="item">
+            <img src="slika/slika7.jpg">
+            <img src="slika/slika8.jpg">
+        </div>
+        <div class="item">
+            <img src="slika/slika9.jpg">
+            <img src="slika/slika10.jpg">
+        </div>
+    </div>
+
+
+    <footer id="sesti" class="item1">
+        <div class="spremnik">
+            <p>© Nikolina Glavota | <a href="forma.html">Vratite se na prijavu</a></p>
+        </div>
+    </footer>
+
+ </div>
+</body>
+</html>

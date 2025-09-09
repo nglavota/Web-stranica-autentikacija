@@ -1,0 +1,120 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    background-color: #b197a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.divSve 
+{
+    background-color: rgb(235, 218, 230);
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 10px;
+}
+
+h1 
+{
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.divForma 
+{
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+label 
+{
+    display: block;
+    margin-bottom: 6px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] 
+{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus 
+{
+    border-color: #743e68;
+    outline: none;
+}
+
+button 
+{
+    background-color: #743e68;
+    color: white;
+    padding: 12px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover 
+{
+    background-color: #a55f88;
+}
+
+.output 
+{
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+}
+
+.output.success 
+{
+    background-color: #90ee90;
+    color: #06470c;
+    display: block;
+}
+
+.output.error 
+{
+    background-color: #f56a6a;
+    color: #610606;
+    display: block;
+}
+
+
+@media screen and (max-width: 450px) 
+{
+    .divSve {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 10px;
+    }
+}
